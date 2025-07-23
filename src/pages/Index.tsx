@@ -12,7 +12,7 @@ const Index = () => {
     {
       id: 1,
       name: "RunSP Eventos",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=100&h=100&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
       banner: "/api/placeholder/400/150",
       rating: 5,
       totalEvents: 47,
@@ -29,7 +29,7 @@ const Index = () => {
     {
       id: 2,
       name: "Atletis Brasil",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=100&h=100&fit=crop&crop=face", 
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face", 
       banner: "/api/placeholder/400/150",
       rating: 4,
       totalEvents: 32,
@@ -46,7 +46,7 @@ const Index = () => {
     {
       id: 3,
       name: "Corredores Unidos",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=100&h=100&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
       banner: "/api/placeholder/400/150", 
       rating: 5,
       totalEvents: 28,
@@ -66,22 +66,22 @@ const Index = () => {
     {
       name: "JEFFERSON LOPES",
       role: "ESPECIALISTA EM MARKETING DIGITAL",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=100&h=100&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face"
     },
     {
       name: "GUIMEL ANDRADE",
       role: "ESPECIALISTA EM GESTÃO DE EVENTOS",
-      image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=100&h=100&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face"
     },
     {
       name: "CLEMERSON LOPES",
       role: "ESPECIALISTA EM DESIGN ORGANIZACIONAL",
-      image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=100&h=100&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=100&h=100&fit=crop&crop=face"
     },
     {
       name: "JORGE HENRIQUE",
       role: "DESENVOLVEDOR FULLSTACK",
-      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=100&h=100&fit=crop&crop=face"
+      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=face"
     }
   ];
 
