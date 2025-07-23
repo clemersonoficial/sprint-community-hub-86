@@ -28,10 +28,15 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate("/")}>
+          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => navigate("/")}>
             <img
               src="/lovable-uploads/ac5297f2-074b-4ca2-acb2-0e7922395322.png"
               alt="Bora Correr Logo"
+              className="h-12 w-auto"
+            />
+            <img
+              src="/lovable-uploads/76b9261e-f21a-48ca-ad98-ea9a42a52e30.png"
+              alt="Logomarca"
               className="h-12 w-auto"
             />
           </div>
