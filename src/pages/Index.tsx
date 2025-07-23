@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
@@ -13,7 +12,7 @@ const Index = () => {
     {
       id: 1,
       name: "RunSP Eventos",
-      image: "/api/placeholder/100/100",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=100&h=100&fit=crop&crop=face",
       banner: "/api/placeholder/400/150",
       rating: 5,
       totalEvents: 47,
@@ -30,7 +29,7 @@ const Index = () => {
     {
       id: 2,
       name: "Atletis Brasil",
-      image: "/api/placeholder/100/100", 
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=100&h=100&fit=crop&crop=face", 
       banner: "/api/placeholder/400/150",
       rating: 4,
       totalEvents: 32,
@@ -47,7 +46,7 @@ const Index = () => {
     {
       id: 3,
       name: "Corredores Unidos",
-      image: "/api/placeholder/100/100",
+      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=100&h=100&fit=crop&crop=face",
       banner: "/api/placeholder/400/150", 
       rating: 5,
       totalEvents: 28,
@@ -67,22 +66,22 @@ const Index = () => {
     {
       name: "JEFFERSON LOPES",
       role: "ESPECIALISTA EM MARKETING DIGITAL",
-      image: "/api/placeholder/100/100"
+      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=100&h=100&fit=crop&crop=face"
     },
     {
       name: "GUIMEL ANDRADE",
       role: "ESPECIALISTA EM GESTÃO DE EVENTOS",
-      image: "/api/placeholder/100/100"
+      image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=100&h=100&fit=crop&crop=face"
     },
     {
       name: "CLEMERSON LOPES",
       role: "ESPECIALISTA EM DESIGN ORGANIZACIONAL",
-      image: "/api/placeholder/100/100"
+      image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=100&h=100&fit=crop&crop=face"
     },
     {
       name: "JORGE HENRIQUE",
       role: "DESENVOLVEDOR FULLSTACK",
-      image: "/api/placeholder/100/100"
+      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?w=100&h=100&fit=crop&crop=face"
     }
   ];
 
@@ -286,24 +285,11 @@ const Index = () => {
               </Card>
             ))}
           </div>
-
-          {/* Back to Top Button */}
-          <div className="text-center mt-16">
-            <button
-              onClick={scrollToTop}
-              className="bg-gradient-primary text-primary-foreground px-8 py-4 rounded-full font-semibold hover:opacity-90 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
-            >
-              <span>VOLTAR AO INÍCIO</span>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-              </svg>
-            </button>
-          </div>
         </div>
       </section>
 
       <StatsSection />
-      <Footer />
+      <Footer scrollToTop={scrollToTop} />
     </div>
   );
 };
