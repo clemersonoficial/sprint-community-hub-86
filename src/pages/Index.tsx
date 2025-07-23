@@ -70,12 +70,12 @@ const Index = () => {
       image: "/api/placeholder/100/100"
     },
     {
-      name: "GABRIEL ANDRADE",
+      name: "GUIMEL ANDRADE",
       role: "ESPECIALISTA EM GESTÃO DE EVENTOS",
       image: "/api/placeholder/100/100"
     },
     {
-      name: "CLEBERGSON LOPES",
+      name: "CLEMERSON LOPES",
       role: "ESPECIALISTA EM DESIGN ORGANIZACIONAL",
       image: "/api/placeholder/100/100"
     },
@@ -85,6 +85,10 @@ const Index = () => {
       image: "/api/placeholder/100/100"
     }
   ];
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -281,6 +285,19 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Back to Top Button */}
+          <div className="text-center mt-16">
+            <button
+              onClick={scrollToTop}
+              className="bg-gradient-primary text-primary-foreground px-8 py-4 rounded-full font-semibold hover:opacity-90 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
+            >
+              <span>VOLTAR AO INÍCIO</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
