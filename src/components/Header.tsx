@@ -39,11 +39,6 @@ const Header = () => {
               alt="Bora Correr Logo" 
               className="h-12 w-auto" 
             />
-            <img 
-              src="/lovable-uploads/76b9261e-f21a-48ca-ad98-ea9a42a52e30.png" 
-              alt="Logomarca" 
-              className="h-12 w-auto" 
-            />
           </div>
 
           {/* Desktop Navigation */}
