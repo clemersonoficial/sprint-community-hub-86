@@ -50,7 +50,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-md">
-                Gerencie eventos, conecte-se com a comunidade e monitore sua performance em uma única plataforma.
+                Otimize seus treinos, aumente a sua performance, e conecte-se com a sua comunidade.
               </p>
             </div>
 
