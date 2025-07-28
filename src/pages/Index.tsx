@@ -3,62 +3,101 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
-import OrganizerProfile from "@/components/OrganizerProfile";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy, Users, Star, Target, Hash, TrendingUp, Zap, Shield, Smartphone, User, Briefcase, ClipboardList } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Trophy, Users, Star, Target, Hash, TrendingUp, Zap, Shield, Smartphone, User, Briefcase, ClipboardList, MapPin, Calendar, Clock } from "lucide-react";
 
 const Index = () => {
-  const featuredOrganizers = [
+  const featuredRaces = [
     {
       id: 1,
-      name: "RunSP Eventos",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-      banner: "/api/placeholder/400/150",
-      rating: 5,
-      totalEvents: 47,
-      totalParticipants: 12847,
-      description: "Organizador líder em eventos de corrida em São Paulo. Especializado em maratonas urbanas e corridas temáticas.",
-      location: "São Paulo, SP",
-      categories: ["Maratona", "Meia Maratona", "10K", "5K"],
-      recentEvents: [
-        { id: 1, name: "Maratona de São Paulo", date: "2024-03-15", participants: 5000 },
-        { id: 2, name: "Night Run SP", date: "2024-02-20", participants: 800 },
-        { id: 3, name: "Corrida do Parque", date: "2024-01-28", participants: 1200 }
-      ]
+      name: "Maratona de São Paulo 2024",
+      date: "2024-04-15",
+      time: "06:00",
+      location: "Parque do Ibirapuera, São Paulo - SP",
+      distance: "42K",
+      price: "R$ 120,00",
+      participants: 5000,
+      maxParticipants: 8000,
+      image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=200&fit=crop",
+      organizer: "RunSP Eventos",
+      difficulty: "Avançado",
+      categories: ["Maratona", "Meia Maratona"]
     },
     {
       id: 2,
-      name: "Atletis Brasil",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face", 
-      banner: "/api/placeholder/400/150",
-      rating: 4,
-      totalEvents: 32,
-      totalParticipants: 8340,
-      description: "Eventos de corrida em todo Brasil. Foco em trail running e corridas de aventura em cenários naturais únicos.",
-      location: "Rio de Janeiro, RJ",
-      categories: ["Trail", "Ultra Trail", "Corrida Rústica", "10K"],
-      recentEvents: [
-        { id: 4, name: "Trail da Tijuca", date: "2024-02-25", participants: 400 },
-        { id: 5, name: "Ultra Trail RJ", date: "2024-01-15", participants: 150 },
-        { id: 6, name: "Corrida Rústica", date: "2024-01-08", participants: 600 }
-      ]
+      name: "Night Run São Paulo",
+      date: "2024-03-22",
+      time: "19:00",
+      location: "Marginal Pinheiros, São Paulo - SP",
+      distance: "10K",
+      price: "R$ 65,00",
+      participants: 1200,
+      maxParticipants: 2000,
+      image: "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=400&h=200&fit=crop",
+      organizer: "RunSP Eventos",
+      difficulty: "Intermediário",
+      categories: ["10K", "5K"]
     },
     {
       id: 3,
-      name: "Corredores Unidos",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-      banner: "/api/placeholder/400/150", 
-      rating: 5,
-      totalEvents: 28,
-      totalParticipants: 6789,
-      description: "Comunidade focada em promover o esporte e a saúde através de corridas inclusivas e acessíveis para todos.",
-      location: "Belo Horizonte, MG",
-      categories: ["5K", "10K", "Corrida Familiar", "Inclusiva"],
-      recentEvents: [
-        { id: 7, name: "Corrida da Pampulha", date: "2024-03-01", participants: 950 },
-        { id: 8, name: "5K Solidário", date: "2024-02-14", participants: 700 },
-        { id: 9, name: "Corrida das Crianças", date: "2024-01-20", participants: 300 }
-      ]
+      name: "Trail da Tijuca",
+      date: "2024-03-30",
+      time: "07:00",
+      location: "Parque Nacional da Tijuca, Rio de Janeiro - RJ",
+      distance: "15K",
+      price: "R$ 85,00",
+      participants: 650,
+      maxParticipants: 800,
+      image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=200&fit=crop",
+      organizer: "Atletis Brasil",
+      difficulty: "Avançado",
+      categories: ["Trail", "Ultra Trail"]
+    },
+    {
+      id: 4,
+      name: "Corrida da Pampulha",
+      date: "2024-04-01",
+      time: "06:30",
+      location: "Lagoa da Pampulha, Belo Horizonte - MG",
+      distance: "5K",
+      price: "R$ 45,00",
+      participants: 800,
+      maxParticipants: 1000,
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop",
+      organizer: "Corredores Unidos",
+      difficulty: "Iniciante",
+      categories: ["5K", "Corrida Familiar"]
+    },
+    {
+      id: 5,
+      name: "Ultra Trail RJ",
+      date: "2024-04-20",
+      time: "05:00",
+      location: "Pedra da Gávea, Rio de Janeiro - RJ",
+      distance: "50K",
+      price: "R$ 180,00",
+      participants: 120,
+      maxParticipants: 200,
+      image: "https://images.unsplash.com/photo-1542662565-7e4b11186672?w=400&h=200&fit=crop",
+      organizer: "Atletis Brasil",
+      difficulty: "Extremo",
+      categories: ["Ultra Trail", "Trail"]
+    },
+    {
+      id: 6,
+      name: "5K Solidário",
+      date: "2024-03-25",
+      time: "08:00",
+      location: "Parque das Mangabeiras, Belo Horizonte - MG",
+      distance: "5K",
+      price: "R$ 35,00",
+      participants: 900,
+      maxParticipants: 1200,
+      image: "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=400&h=200&fit=crop",
+      organizer: "Corredores Unidos",
+      difficulty: "Iniciante",
+      categories: ["5K", "Inclusiva"]
     }
   ];
 
@@ -95,22 +134,62 @@ const Index = () => {
       <HeroSection />
       <FeaturesSection />
       
-      {/* Featured Organizers Section */}
+      {/* Featured Races Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              <span className="gradient-text">Organizadores</span>
+              <span className="gradient-text">Corridas</span>
               <span className="text-foreground"> em Destaque</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Conheça os organizadores mais bem avaliados da plataforma e explore seus eventos incríveis
+              Encontre sua próxima corrida, inscreva-se de forma prática e monte seu calendário de competições
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {featuredOrganizers.map((organizer) => (
-              <OrganizerProfile key={organizer.id} organizer={organizer} />
+            {featuredRaces.map((race) => (
+              <Card key={race.id} className="card-glow hover:scale-105 transition-all duration-300">
+                <div className="relative">
+                  <img 
+                    src={race.image} 
+                    alt={race.name}
+                    className="w-full h-48 object-cover rounded-t-lg"
+                  />
+                  <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-bold">
+                    {race.distance}
+                  </div>
+                  <div className="absolute top-4 right-4 bg-background/90 text-foreground px-3 py-1 rounded-full text-sm font-bold">
+                    {race.difficulty}
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-lg">{race.name}</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    {new Date(race.date).toLocaleDateString('pt-BR')} às {race.time}
+                  </div>
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    {race.location}
+                  </div>
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <Users className="w-4 h-4 mr-2" />
+                    {race.participants}/{race.maxParticipants} inscritos
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl font-bold text-primary">{race.price}</span>
+                    <Button className="btn-primary">
+                      Inscrever-se
+                    </Button>
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    Por: {race.organizer}
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
 
@@ -153,9 +232,9 @@ const Index = () => {
         
         {/* Background Image with People Running */}
         <div 
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url(https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=1200&h=800&fit=crop)`,
+            backgroundImage: `url(https://img.freepik.com/fotos-gratis/vista-lateral-adequada-para-amigos-ao-ar-livre_23-2150828918.jpg?semt=ais_hybrid&w=740&q=80)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'

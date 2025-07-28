@@ -1,6 +1,5 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { 
   CreditCard, 
   Users, 
@@ -154,40 +153,6 @@ const FeaturesSection = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-
-        {/* Corridas em Destaque */}
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-foreground mb-4">
-              <span className="gradient-text">Corridas</span>
-              <span className="text-foreground"> em Destaque</span>
-            </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Encontre sua próxima corrida, inscreva-se de forma prática e monte seu calendário de competições.
-            </p>
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center bg-gradient-dark rounded-3xl p-12 card-glow">
-          <h3 className="text-3xl font-bold mb-6">
-            Pronto para <span className="gradient-text">Começar</span>?
-          </h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Junte-se a milhares de atletas e organizadores que já transformaram 
-            sua experiência com corridas
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-primary text-lg px-8 py-4">
-              <Users className="w-5 h-5 mr-2" />
-              CRIAR CONTA GRÁTIS
-            </Button>
-            <Button className="btn-outline text-lg px-8 py-4">
-              <Smartphone className="w-5 h-5 mr-2" />
-              BAIXAR APP
-            </Button>
           </div>
         </div>
       </div>
