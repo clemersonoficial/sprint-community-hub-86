@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
@@ -10,60 +11,66 @@ import {
   Smartphone,
   TrendingUp,
   UserCheck,
-  Heart
+  Heart,
+  DollarSign,
+  IdCard,
+  BarChart3,
+  Medal,
+  MapPinIcon,
+  RefreshCw
 } from "lucide-react";
 
 const FeaturesSection = () => {
   const organizerFeatures = [
     {
       icon: CreditCard,
-      title: "Pagamentos Seguros",
-      description: "Integração com ASAS e Mercado Pago. Saque liberado após o evento.",
+      title: "Pagamentos e transações com segurança",
+      description: "💳 Integração com Asaas e Mercado Pago, senha para transações e controle financeiro completo para sua organização.",
       color: "text-green-400"
     },
     {
-      icon: UserCheck,
-      title: "Retirada de Kit por CPF",
-      description: "Sistema automático de validação e controle de entrega de kits.",
+      icon: IdCard,
+      title: "Retirada de kits facilitada",
+      description: "🆔 Retirada simples utilizando apenas o CPF do atleta. Mais agilidade e controle no dia do evento.",
       color: "text-blue-400"
     },
     {
-      icon: Users,
-      title: "Gestão de Grupos",
-      description: "Crie grupos, defina líderes e gerencie equipes facilmente.",
+      icon: BarChart3,
+      title: "Área financeira descomplicada",
+      description: "📈 Venda à vista ou parcelada, controle de virada de lote e emissão automática de certificados ao final da corrida.",
       color: "text-purple-400"
     },
     {
-      icon: Shield,
-      title: "Transações Seguras",
-      description: "Senha para transações e controle financeiro completo.",
+      icon: Smartphone,
+      title: "Mais praticidade no seu dia a dia",
+      description: "📱 Gerencie toda a sua corrida direto do celular, com agilidade, controle e praticidade.",
       color: "text-red-400"
     }
   ];
 
   const athleteFeatures = [
     {
-      icon: Heart,
-      title: "Conecte com Strava/Garmin",
-      description: "Sincronize automaticamente seus treinos e métricas.",
+      icon: MapPinIcon,
+      title: "Descubra as melhores corridas",
+      description: "📍 Inscreva-se com facilidade, segurança e garanta sua vaga nos melhores eventos da sua região.",
       color: "text-orange-400"
     },
     {
-      icon: TrendingUp,
-      title: "Análise de Performance",
-      description: "Acompanhe seu progresso e evolução nos treinos.",
+      icon: Medal,
+      title: "Potencialize seus treinos",
+      description: "🏅 Acompanhe sua evolução, compare seu desempenho e conquiste medalhas virtuais exclusivas.",
       color: "text-cyan-400"
     },
     {
-      icon: MapPin,
-      title: "Comunidades Locais",
-      description: "Encontre grupos de corrida na sua região.",
+      icon: Users,
+      title: "Comunidades de corrida",
+      description: "👟 Conecte-se com grupos de corrida perto de você e compartilhe experiências únicas.",
       color: "text-green-400"
     },
     {
-      icon: Trophy,
-      title: "Conquistas e Rankings",
-      description: "Compare seu desempenho e ganhe medalhas virtuais.",
+      icon: RefreshCw,
+      title: "Sincronize com seus apps favoritos",
+      description: "🔄 Integração automática com Strava e Garmin para importar seus treinos e métricas.",
       color: "text-yellow-400"
     }
   ];
@@ -147,6 +154,19 @@ const FeaturesSection = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+
+        {/* Corridas em Destaque */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-foreground mb-4">
+              <span className="gradient-text">Corridas</span>
+              <span className="text-foreground"> em Destaque</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Encontre sua próxima corrida, inscreva-se de forma prática e monte seu calendário de competições.
+            </p>
           </div>
         </div>
 

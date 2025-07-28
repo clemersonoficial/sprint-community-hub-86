@@ -1,11 +1,11 @@
+
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
-import StatsSection from "@/components/StatsSection";
 import Footer from "@/components/Footer";
 import OrganizerProfile from "@/components/OrganizerProfile";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy, Users, Star, Target, Hash, TrendingUp, Zap, Shield, Smartphone } from "lucide-react";
+import { Trophy, Users, Star, Target, Hash, TrendingUp, Zap, Shield, Smartphone, User, Briefcase, ClipboardList } from "lucide-react";
 
 const Index = () => {
   const featuredOrganizers = [
@@ -146,9 +146,21 @@ const Index = () => {
 
       {/* Para Quem É A Plataforma Section */}
       <section className="py-20 bg-gradient-dark relative overflow-hidden">
+        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary))_0%,transparent_70%)]" />
         </div>
+        
+        {/* Background Image with People Running */}
+        <div 
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=1200&h=800&fit=crop)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
@@ -160,39 +172,39 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="card-glow bg-background/5 backdrop-blur-sm border-primary/20">
+            <Card className="card-glow bg-background/10 backdrop-blur-sm border-primary/20">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Target className="w-8 h-8 text-primary-foreground" />
+                  <User className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-bold mb-4 inline-block">
-                  ATLETAS
+                  🧍‍♂️ ATLETAS
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">QUE BUSCAM</h3>
                 <p className="text-2xl font-black text-primary">OTIMIZAR SEUS RESULTADOS</p>
               </CardContent>
             </Card>
 
-            <Card className="card-glow bg-background/5 backdrop-blur-sm border-primary/20">
+            <Card className="card-glow bg-background/10 backdrop-blur-sm border-primary/20">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Hash className="w-8 h-8 text-primary-foreground" />
+                  <Briefcase className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-bold mb-4 inline-block">
-                  ORGANIZADORES
+                  🧑‍💼 ORGANIZADORES
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">QUE BUSCAM</h3>
                 <p className="text-2xl font-black text-primary">PROFISSIONALIZAR SEUS EVENTOS</p>
               </CardContent>
             </Card>
 
-            <Card className="card-glow bg-background/5 backdrop-blur-sm border-primary/20">
+            <Card className="card-glow bg-background/10 backdrop-blur-sm border-primary/20">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <TrendingUp className="w-8 h-8 text-primary-foreground" />
+                  <ClipboardList className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-bold mb-4 inline-block">
-                  ASSESSORIAS
+                  📋 ASSESSORIAS ESPORTIVAS
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">QUE BUSCAM</h3>
                 <p className="text-2xl font-black text-primary">OTIMIZAÇÃO DE GESTÃO</p>
@@ -213,7 +225,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <Card className="card-glow bg-background/5 backdrop-blur-sm border-primary/20">
+              <Card className="card-glow bg-background/10 backdrop-blur-sm border-primary/20">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <Shield className="w-8 h-8 text-primary mr-3" />
@@ -225,7 +237,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="card-glow bg-background/5 backdrop-blur-sm border-primary/20">
+              <Card className="card-glow bg-background/10 backdrop-blur-sm border-primary/20">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <Smartphone className="w-8 h-8 text-primary mr-3" />
@@ -239,7 +251,7 @@ const Index = () => {
             </div>
 
             <div className="space-y-8">
-              <Card className="card-glow bg-background/5 backdrop-blur-sm border-primary/20">
+              <Card className="card-glow bg-background/10 backdrop-blur-sm border-primary/20">
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <Zap className="w-8 h-8 text-primary mr-3" />
@@ -288,7 +300,6 @@ const Index = () => {
         </div>
       </section>
 
-      <StatsSection />
       <Footer scrollToTop={scrollToTop} />
     </div>
   );
