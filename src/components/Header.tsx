@@ -15,16 +15,16 @@ const Header = () => {
       href: "/",
     },
     {
-      name: "EVENTOS",
-      href: "/eventos",
-    },
-    {
-      name: "INSCRIÇÕES",
-      href: "/inscricoes",
+      name: "CORRIDAS",
+      href: "/corridas",
     },
     {
       name: "BLOG",
       href: "/blog",
+    },
+    {
+      name: "LOGIN",
+      href: "/login",
     }
   ];
 

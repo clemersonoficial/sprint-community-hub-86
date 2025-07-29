@@ -5,7 +5,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Trophy, Users, Star, Target, Hash, TrendingUp, Zap, Shield, Smartphone, User, Briefcase, ClipboardList, MapPin, Calendar, Clock } from "lucide-react";
+import { Trophy, Users, Star, Target, Hash, TrendingUp, Zap, Shield, Smartphone, User, Briefcase, ClipboardList, MapPin, Calendar, Clock, Clipboard } from "lucide-react";
 
 const Index = () => {
   const featuredRaces = [
@@ -182,7 +182,7 @@ const Index = () => {
                   <div className="flex items-center justify-between">
                     <span className="text-2xl font-bold text-primary">{race.price}</span>
                     <Button className="btn-primary">
-                      Inscrever-se
+                      Ver Detalhes
                     </Button>
                   </div>
                   <div className="text-sm text-muted-foreground">
@@ -267,7 +267,7 @@ const Index = () => {
             <Card className="card-glow bg-background/10 backdrop-blur-sm border-primary/20">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Briefcase className="w-8 h-8 text-primary-foreground" />
+                  <Clipboard className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <div className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-bold mb-4 inline-block">
                   🧑‍💼 ORGANIZADORES
