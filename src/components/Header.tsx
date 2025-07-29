@@ -16,7 +16,7 @@ const Header = () => {
     },
     {
       name: "CORRIDAS",
-      href: "/corridas",
+      href: "/eventos",
     },
     {
       name: "BLOG",

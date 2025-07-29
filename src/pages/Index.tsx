@@ -181,7 +181,10 @@ const Index = () => {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-2xl font-bold text-primary">{race.price}</span>
-                    <Button className="btn-primary">
+                    <Button 
+                      className="btn-primary"
+                      onClick={() => window.location.href = `/evento/${race.id}`}
+                    >
                       Ver Detalhes
                     </Button>
                   </div>

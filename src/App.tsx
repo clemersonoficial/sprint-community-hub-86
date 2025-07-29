@@ -16,6 +16,8 @@ import EventRegistration from "./pages/EventRegistration";
 import Inscricoes from "./pages/Inscricoes";
 import Comunidades from "./pages/Comunidades";
 import OrganizerProfile from "./pages/OrganizerProfile";
+import Login from "./pages/Login";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +39,8 @@ const App = () => (
           <Route path="/evento/:id/inscricao" element={<EventRegistration />} />
           <Route path="/inscricoes" element={<Inscricoes />} />
           <Route path="/comunidades" element={<Comunidades />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/blog" element={<Blog />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
