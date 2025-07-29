@@ -37,7 +37,7 @@ const Login = () => {
                   <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                     <User className="w-10 h-10 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-2xl mb-4 text-primary">SOU ATLETA</CardTitle>
+                  <CardTitle className="text-2xl mb-4 text-primary">Atleta</CardTitle>
                   <p className="text-muted-foreground mb-6">
                     Acesse sua área para encontrar corridas, acompanhar seu progresso e conectar-se com outros corredores.
                   </p>
@@ -53,7 +53,7 @@ const Login = () => {
                   <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                     <Clipboard className="w-10 h-10 text-secondary-foreground" />
                   </div>
-                  <CardTitle className="text-2xl mb-4 text-secondary">SOU ORGANIZADOR</CardTitle>
+                  <CardTitle className="text-2xl mb-4 text-secondary">Organizador</CardTitle>
                   <p className="text-muted-foreground mb-6">
                     Acesse sua área para criar e gerenciar eventos de corrida com ferramentas profissionais.
                   </p>
