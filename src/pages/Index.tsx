@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
@@ -6,10 +5,6 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Trophy, Users, Star, Target, Hash, TrendingUp, Zap, Shield, Smartphone, User, Briefcase, ClipboardList, MapPin, Calendar, Clock, Clipboard } from "lucide-react";
-import jeffersonLopesImg from "@/assets/jefferson-lopes.jpg";
-import guimelAndradeImg from "@/assets/guimel-andrade.jpg";
-import clemersonLopesImg from "@/assets/clemerson-lopes.jpg";
-import jorgeHenriqueImg from "@/assets/jorge-henrique.jpg";
 
 const Index = () => {
   const featuredRaces = [
@@ -109,22 +104,22 @@ const Index = () => {
     {
       name: "JEFFERSON LOPES",
       role: "ESPECIALISTA EM MARKETING DIGITAL",
-      image: jeffersonLopesImg
+      image: "https://i.im.ge/2025/07/30/JPQhSa.1S5A2228.png"
     },
     {
       name: "GUIMEL ANDRADE",
       role: "ESPECIALISTA EM GESTÃO DE EVENTOS",
-      image: guimelAndradeImg
+      image: "https://i.im.ge/2025/07/30/JPQDDL.guimel.png"
     },
     {
       name: "CLEMERSON LOPES",
       role: "ESPECIALISTA EM DESIGN ORGANIZACIONAL",
-      image: clemersonLopesImg
+      image: "https://i.im.ge/2025/07/30/JPQICG.507959079-1484835859556302-8363493182852914122-n.png"
     },
     {
       name: "JORGE HENRIQUE",
       role: "DESENVOLVEDOR FULLSTACK",
-      image: jorgeHenriqueImg
+      image: "https://i.im.ge/2025/07/30/JPQLvx.jorge.png"
     }
   ];
 
