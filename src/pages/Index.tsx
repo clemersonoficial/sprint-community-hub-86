@@ -104,7 +104,7 @@ const Index = () => {
     {
       name: "JEFFERSON LOPES",
       role: "ESPECIALISTA EM MARKETING DIGITAL",
-      image: "https://i.im.ge/2025/07/30/JPQhSa.1S5A2228.png"
+      image: "https://i.im.ge/2025/07/30/JPQi6J.1S5A2228.png"
     },
     {
       name: "GUIMEL ANDRADE",
