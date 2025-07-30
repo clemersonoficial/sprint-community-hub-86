@@ -233,11 +233,11 @@ const Index = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary))_0%,transparent_70%)]" />
         </div>
         
-        {/* Background Image with People Running */}
+        {/* Background Image with Chapada dos Veadeiros */}
         <div 
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: `url(https://img.freepik.com/fotos-gratis/vista-lateral-adequada-para-amigos-ao-ar-livre_23-2150828918.jpg?semt=ais_hybrid&w=740&q=80)`,
+            backgroundImage: `url(https://gooutside.com.br/wp-content/uploads/sites/3/2022/09/Chapada-dos-Veadeiros-1.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'

@@ -50,14 +50,14 @@ const Login = () => {
               {/* Organizador Login */}
               <Card className="card-glow hover:scale-105 transition-all duration-300 cursor-pointer" onClick={handleOrganizerLogin}>
                 <CardContent className="p-8 text-center">
-                  <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Clipboard className="w-10 h-10 text-secondary-foreground" />
+                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Clipboard className="w-10 h-10 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-2xl mb-4 text-secondary">Organizador</CardTitle>
+                  <CardTitle className="text-2xl mb-4 text-primary">Organizador</CardTitle>
                   <p className="text-muted-foreground mb-6">
                     Acesse sua área para criar e gerenciar eventos de corrida com ferramentas profissionais.
                   </p>
-                  <Button variant="outline" className="w-full" size="lg">
+                  <Button variant="outline" className="w-full flex items-center justify-center" size="lg">
                     ENTRAR COMO ORGANIZADOR
                   </Button>
                 </CardContent>
