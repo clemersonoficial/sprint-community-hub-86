@@ -6,6 +6,10 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Trophy, Users, Star, Target, Hash, TrendingUp, Zap, Shield, Smartphone, User, Briefcase, ClipboardList, MapPin, Calendar, Clock, Clipboard } from "lucide-react";
+import jeffersonLopesImg from "@/assets/jefferson-lopes.jpg";
+import guimelAndradeImg from "@/assets/guimel-andrade.jpg";
+import clemersonLopesImg from "@/assets/clemerson-lopes.jpg";
+import jorgeHenriqueImg from "@/assets/jorge-henrique.jpg";
 
 const Index = () => {
   const featuredRaces = [
@@ -105,22 +109,22 @@ const Index = () => {
     {
       name: "JEFFERSON LOPES",
       role: "ESPECIALISTA EM MARKETING DIGITAL",
-      image: "https://im.ge/i/1S5A2228.JPQhSa"
+      image: jeffersonLopesImg
     },
     {
       name: "GUIMEL ANDRADE",
       role: "ESPECIALISTA EM GESTÃO DE EVENTOS",
-      image: "https://im.ge/i/guimel.JPQDDL"
+      image: guimelAndradeImg
     },
     {
       name: "CLEMERSON LOPES",
       role: "ESPECIALISTA EM DESIGN ORGANIZACIONAL",
-      image: "https://im.ge/i/507959079-1484835859556302-8363493182852914122-n.JPQICG"
+      image: clemersonLopesImg
     },
     {
       name: "JORGE HENRIQUE",
       role: "DESENVOLVEDOR FULLSTACK",
-      image: "https://im.ge/i/jorge.JPQLvx"
+      image: jorgeHenriqueImg
     }
   ];
 
