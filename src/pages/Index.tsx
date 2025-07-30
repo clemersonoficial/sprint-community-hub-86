@@ -105,22 +105,22 @@ const Index = () => {
     {
       name: "JEFFERSON LOPES",
       role: "ESPECIALISTA EM MARKETING DIGITAL",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face"
+      image: "https://im.ge/i/1S5A2228.JPQhSa"
     },
     {
       name: "GUIMEL ANDRADE",
       role: "ESPECIALISTA EM GESTÃO DE EVENTOS",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face"
+      image: "https://im.ge/i/guimel.JPQDDL"
     },
     {
       name: "CLEMERSON LOPES",
       role: "ESPECIALISTA EM DESIGN ORGANIZACIONAL",
-      image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=100&h=100&fit=crop&crop=face"
+      image: "https://im.ge/i/507959079-1484835859556302-8363493182852914122-n.JPQICG"
     },
     {
       name: "JORGE HENRIQUE",
       role: "DESENVOLVEDOR FULLSTACK",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=face"
+      image: "https://im.ge/i/jorge.JPQLvx"
     }
   ];
 
