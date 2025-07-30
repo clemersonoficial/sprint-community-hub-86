@@ -3,20 +3,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { User, Clipboard } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
-
 const Login = () => {
   const navigate = useNavigate();
-
   const handleAthleteLogin = () => {
     navigate("/atleta/login");
   };
-
   const handleOrganizerLogin = () => {
     navigate("/organizador/login");
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       <div className="pt-24 pb-20">
         <div className="container mx-auto px-4">
@@ -57,9 +52,7 @@ const Login = () => {
                   <p className="text-muted-foreground mb-6">
                     Acesse sua área para criar e gerenciar eventos de corrida com ferramentas profissionais.
                   </p>
-                  <Button variant="outline" className="w-full flex items-center justify-center" size="lg">
-                    ENTRAR COMO ORGANIZADOR
-                  </Button>
+                  <Button variant="outline" className="w-full flex items-center justify-center" size="lg">ORGANIZADOR</Button>
                 </CardContent>
               </Card>
             </div>
@@ -75,8 +68,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Login;
